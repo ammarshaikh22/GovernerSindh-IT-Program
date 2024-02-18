@@ -94,7 +94,7 @@
 //================
 // let Guest:string[] = [
 //     "Alice", "Bob", "Charlie", "David", "Emily"
-// ] 
+// ]
 // Guest.forEach((invite) => console.log(`Dear ${invite}, you are invited to dinner! Please join us for an evening of stimulating conversation.`))
 
 //================
@@ -311,3 +311,360 @@
 // }else{
 //     console.error("error")
 // }
+
+//================
+//Question : 26
+//================
+// let aline_colour: string[] = ['green', 'yellow', 'red']
+//If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
+// if(aline_colour.includes("green")){
+//     console.log('The player just earned 5 points for shooting the alien.')
+// }
+//If the alien’s color isn’t green, print a statement that the player just earned 10 points.
+// if(!aline_colour.includes("green")){
+//     console.log('The player just earned 10 points.')
+// }
+// Write one version of this program that runs the if block and another that runs the else block.
+// if(aline_colour.includes('green')){
+//     console.log('The player just earned 5 points for shooting the alien')
+// }else if(!aline_colour.includes('green')){
+//     console.log('The player just earned 10 points.')
+// }
+
+//================
+//Question : 27
+//================
+// const alienColor: string = "green";
+// if (alienColor === "green") {
+//     console.log("Congratulations! You earned 5 points.");
+// } else if (alienColor === "yellow") {
+//     console.log("Congratulations! You earned 10 points.");
+// } else if (alienColor === "red") {
+//     console.log("Congratulations! You earned 15 points.");
+// }
+// const alienColor: string = "yellow";
+// if (alienColor === "green") {
+//     console.log("Congratulations! You earned 5 points.");
+// } else if (alienColor === "yellow") {
+//     console.log("Congratulations! You earned 10 points.");
+// } else if (alienColor === "red") {
+//     console.log("Congratulations! You earned 15 points.");
+// }
+// const alienColor: string = "red";
+// if (alienColor === "green") {
+//     console.log("Congratulations! You earned 5 points.");
+// } else if (alienColor === "yellow") {
+//     console.log("Congratulations! You earned 10 points.");
+// } else if (alienColor === "red") {
+//     console.log("Congratulations! You earned 15 points.");
+// }
+
+//================
+//Question : 28
+//================
+//If the person is less than 2 years old, print a message that the person is a baby.
+// let age: number = 30;
+// if (age < 2) {
+//     console.log("The person is a baby.");
+// } else if (age >= 2 && age < 4) {
+//     console.log("The person is a toddler.");
+// } else if (age >= 4 && age < 13) {
+//     console.log("The person is a kid.");
+// } else if (age >= 13 && age < 20) {
+//     console.log("The person is a teenager.");
+// } else if (age >= 20 && age < 65) {
+//     console.log("The person is an adult.");
+// } else {
+//     console.log("The person is an elder.");
+// }
+
+//================
+//Question : 29
+//================
+// Define an array of favorite fruits
+// const favoriteFruits: string[] = ["apple", "banana", "mango"];
+// // Check for specific fruits in the array
+// if (favoriteFruits.includes("banana")) {
+//     console.log("You really like bananas!");
+// }
+// if (favoriteFruits.includes("apple")) {
+//     console.log("You really like apples!");
+// }
+// if (favoriteFruits.includes("mango")) {
+//     console.log("You really like mangoes!");
+// }
+// if (favoriteFruits.includes("orange")) {
+//     console.log("You really like oranges!");
+// }
+// if (favoriteFruits.includes("strawberry")) {
+//     console.log("You really like strawberries!");
+// }
+
+//================
+//Question : 30
+//================
+// Array of usernames
+// const usernames: string[] = ["john", "alice", "admin", "smith", "emma"];
+// // Loop through the array and print greetings
+// for (const username of usernames) {
+//     if (username === "admin") {
+//         console.log("Hello admin, would you like to see a status report?");
+//     } else {
+//         console.log(`Hello ${username}, thank you for logging in again.`);
+//     }
+// }
+
+//================
+//Question : 31
+//================
+// let age: number;
+// if (age < 2) {
+//     console.log("The person is a baby.");
+// } else if (age >= 2 && age < 4) {
+//     console.log("The person is a toddler.");
+// } else if (age >= 4 && age < 13) {
+//     console.log("The person is a kid.");
+// } else if (age >= 13 && age < 20) {
+//     console.log("The person is a teenager.");
+// } else if (age >= 20 && age < 65) {
+//     console.log("The person is an adult.");
+// } else if (age >= 65 && age > 65) {
+//     console.log("The person is an elder.");
+// } else {
+//     console.log('We need to find some users!')
+// }
+
+//================
+//Question : 32
+//================
+// List of current users
+// const currentUsers: string[] = ["john", "alice", "bob", "emma", "smith"];
+// // List of new users
+// const newUsers: string[] = ["emily", "John", "ALICE", "charlie", "bob"];
+
+// const isUsernameTaken = (username:string):boolean => { 
+//     const changeLowercase = username.toLowerCase()
+//     return currentUsers.some((user)=> user.toLowerCase() === changeLowercase)
+// }
+// for(const newUser of newUsers){
+//     if(isUsernameTaken(newUser)){
+//         console.log(`Sorry, the username '${newUser}' is already taken. Please enter`)
+//     }else{
+//         console.log(`Congratulations, the username '${newUser}' is available.`);
+//     }
+// }
+
+//================
+//Question : 33
+//================
+// Store numbers 1 through 9 in an array
+// const numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// // Loop through the array
+// for (const number of numbers) {
+//     // Use an if-else chain to determine the proper ordinal ending
+//     let ordinalEnding: string;
+//     if (number === 1) {
+//         ordinalEnding = "st";
+//     } else if (number === 2) {
+//         ordinalEnding = "nd";
+//     } else if (number === 3) {
+//         ordinalEnding = "rd";
+//     } else {
+//         ordinalEnding = "th";
+//     }
+//     console.log(`${number}${ordinalEnding}`);
+// }
+
+//================
+//Question : 34
+//================
+// Array of favorite pizza names
+// const favoritePizzas: string[] = ["Pepperoni", "Margherita", "Supreme"];
+// // Print each pizza name using a for loop
+// for (const pizza of favoritePizzas) {
+//     console.log(pizza);
+// }
+// console.log("\n");
+// // Print a sentence for each pizza
+// for (const pizza of favoritePizzas) {
+//     console.log(`I like ${pizza} pizza.`);
+// }
+// console.log("\n");
+// // Additional statement expressing love for pizza
+// console.log("I really love pizza!");
+
+//================
+//Question : 35
+//================
+// let animals:string[] = ['cat', 'cow', 'dog']
+// for(const animal of animals){
+//     console.log(animal)
+// }
+// console.log('\n')
+// for(const animal of animals){
+//     console.log(`${animal.toUpperCase()} is a great pet animal`)
+// }
+// console.log('\n')
+
+//================
+//Question : 36
+//================
+// const makeTshirt = (size: string):any => {
+//     return `The shirt size is ${size}`
+// }
+// console.log(makeTshirt("large"))
+
+//================
+//Question : 37
+//================
+// Define the make_shirt function with default parameters
+// function make_shirt(size: string = "Large", message: string = "I love TypeScript"): void {
+//     console.log(`The shirt size is ${size} and it says "${message}".`);
+// }
+// make_shirt();
+// make_shirt("Medium");
+// make_shirt("Small", "Hello, World!");
+
+//================
+//Question : 38
+//================
+//  const describe_city = (city:string , country:string = "pakistan"): void =>{
+//    console.log(`${city} is in ${country}`)
+//  }
+// describe_city("karachi")
+// describe_city("Mirpurkhas")
+// describe_city("Multan")
+
+//================
+//Question : 39
+//================
+// const city_country = (city: string, country: string):void => {
+//     console.log(`${city},${country}`)
+// }
+// city_country("karachi", "pakistan")
+// city_country("Lahore", "pakistan")
+// city_country("Mirpurkhas", "pakistan")
+
+//================
+//Question : 40
+//================
+// Define the make_album function
+// function make_album(artist: string, title: string, tracks?: number): { artist: string, title: string, tracks?: number } {
+//     const album: { artist: string, title: string, tracks?: number } = {
+//         artist: artist,
+//         title: title
+//     };
+//     if (tracks !== undefined) {
+//         album.tracks = tracks;
+//     }
+//     return album;
+// }
+// // Create three dictionaries representing different albums
+// const album1 = make_album("Artist 1", "Album 1");
+// const album2 = make_album("Artist 2", "Album 2", 12); // With number of tracks
+// const album3 = make_album("Artist 3", "Album 3");
+// // Print each return value to show that objects are storing the album information correctly
+// console.log(album1);
+// console.log(album2);
+// console.log(album3);
+
+//================
+//Question : 41
+//================
+// let magicians: string[] = [
+//     "Harry Houdini",
+//     "David Copperfield",
+//     "Penn Jillette",
+//     "Teller"
+// ];
+//const show_magicians = (magicians:string[]):void => {
+//     magicians.forEach(magician => {
+//        console.log(magician)
+//     })
+// } 
+// show_magicians(magicians)
+
+//================
+//Question : 42
+//================
+// function show_magicians(magicians: string[]): void {
+//     magicians.forEach(magician => {
+//         console.log(magician);
+//     });
+// }
+// function make_great(magicians: string[]): string[] {
+//     return magicians.map(magician => `the Great ${magician}`);
+// }
+// let magicians: string[] = [
+//     "Harry Houdini",
+//     "David Copperfield",
+//     "Penn Jillette",
+//     "Teller"
+// ];
+// magicians = make_great(magicians);
+// show_magicians(magicians);
+
+//================
+//Question : 43
+//================
+// function show_magicians(magicians: string[]): void {
+//     magicians.forEach(magician => {
+//         console.log(magician);
+//     });
+// }
+
+// function make_great(magicians: string[]): string[] {
+//     return magicians.map(magician => `the Great ${magician}`);
+// }
+
+// let originalMagicians: string[] = [
+//     "Harry Houdini",
+//     "David Copperfield",
+//     "Penn Jillette",
+//     "Teller"
+// ];
+
+// let greatMagicians: string[] = make_great([...originalMagicians]); // Create a copy of the original array
+
+// console.log("Original Magicians:");
+// show_magicians(originalMagicians);
+
+// console.log("\nGreat Magicians:");
+// show_magicians(greatMagicians);
+
+//================
+//Question : 44
+//================
+// function makeSandwich(...items: string[]): void {
+//     console.log("Making a sandwich with the following items:");
+//     items.forEach(item => console.log(`- ${item}`));
+//     console.log("Enjoy your sandwich!\n");
+// }
+// makeSandwich("Ham", "Cheese", "Lettuce", "Tomato");
+// makeSandwich("Turkey", "Swiss cheese", "Mustard");
+// makeSandwich("Peanut butter", "Jelly");
+
+//================
+//Question : 45
+//================
+// interface Car {
+//     manufacturer: string;
+//     modelName: string;
+//     [key: string]: any; // Allow any additional properties
+// }
+
+// function createCar(manufacturer: string, modelName: string, ...additionalInfo: [string, any][]): Car {
+//     const car: Car = {
+//         manufacturer,
+//         modelName
+//     };
+
+//     // Add additional information
+//     additionalInfo.forEach(([key, value]) => {
+//         car[key] = value;
+//     });
+
+//     return car;
+// }
+// const myCar = createCar("Toyota", "Camry", "color", "red", "year", 2022);
+// console.log(myCar);

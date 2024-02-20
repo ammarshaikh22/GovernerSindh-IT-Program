@@ -8,9 +8,9 @@
 //Question : 3
 //================
 // let firstName:string = "jhon deo";
-// console.log("ToUpperCase " + firstName.toUpperCase())
-// console.log("ToLowerCase " + firstName.toLowerCase())
-// console.log("ToTitleCase " + firstName.charAt(0).toUpperCase() + firstName.slice(1).toLowerCase())
+// console.log( firstName.toUpperCase())
+// console.log( firstName.toLowerCase())
+// console.log( firstName.charAt(0).toUpperCase() + firstName.slice(1).toLowerCase())
 
 //================
 //Question : 4

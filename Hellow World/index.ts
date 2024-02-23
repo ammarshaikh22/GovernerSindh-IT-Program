@@ -5,6 +5,7 @@
 // let message:string = `Hello ${person} would you like to learn some Python today?`
 // console.log(message);
 
+
 //================
 // Question 3
 //================
@@ -303,230 +304,207 @@
 // }
 
 //================
-//Question : 29
+// Question 29
 //================
-// Define an array of favorite fruits
-// const favoriteFruits: string[] = ["apple", "banana", "mango"];
-// // Check for specific fruits in the array
-// if (favoriteFruits.includes("banana")) {
+// let favorite_fruits:string[] = ['banana', 'mango', 'pineapple']
+// if(favorite_fruits.includes('banana')){
 //     console.log("You really like bananas!");
 // }
-// if (favoriteFruits.includes("apple")) {
-//     console.log("You really like apples!");
+// if(favorite_fruits.includes('mango')){
+//     console.log("You really like mango!");
 // }
-// if (favoriteFruits.includes("mango")) {
-//     console.log("You really like mangoes!");
+// if(favorite_fruits.includes('pineapple')){
+//     console.log("You really like pineapple!");
 // }
-// if (favoriteFruits.includes("orange")) {
-//     console.log("You really like oranges!");
+// if(favorite_fruits.includes('apple')){
+//     console.log("You really like apple!");
+// }else{
+//     console.log("You do not really like apple!");
+
 // }
-// if (favoriteFruits.includes("strawberry")) {
-//     console.log("You really like strawberries!");
+// if(favorite_fruits.includes('orange')){
+//     console.log("You really like orange!");
+// }else{
+//     console.log('You do not really like orange!');
 // }
 
 //================
-//Question : 30
+// Question 30
 //================
-// Array of usernames
-// const usernames: string[] = ["john", "alice", "admin", "smith", "emma"];
-// // Loop through the array and print greetings
-// for (const username of usernames) {
-//     if (username === "admin") {
-//         console.log("Hello admin, would you like to see a status report?");
-//     } else {
-//         console.log(`Hello ${username}, thank you for logging in again.`);
+// let usernames: string[] = ['jhon', 'eric', 'marsh', 'admin', 'ammar']
+// usernames.forEach((user) => {
+//     if(user === "admin"){
+//         console.log('Hello admin, would you like to see a status report?');
+//     }else{
+//         console.log(`${user}, thank you for logging in again.`);
+
 //     }
-// }
+// })
 
 //================
-//Question : 31
+// Question 31
 //================
-// let age: number;
-// if (age < 2) {
-//     console.log("The person is a baby.");
-// } else if (age >= 2 && age < 4) {
-//     console.log("The person is a toddler.");
-// } else if (age >= 4 && age < 13) {
-//     console.log("The person is a kid.");
-// } else if (age >= 13 && age < 20) {
-//     console.log("The person is a teenager.");
-// } else if (age >= 20 && age < 65) {
-//     console.log("The person is an adult.");
-// } else if (age >= 65 && age > 65) {
-//     console.log("The person is an elder.");
-// } else {
+// let age:number;
+// if(age < 2 ){
+//     console.log('The person is a baby');
+// }else if (age >= 2 && age < 4){
+//     console.log('The person is a toddler.');
+// }else if (age >= 4 && age < 13){
+//     console.log('The person is a kid');
+// }else if (age >= 13 && age < 20){
+//     console.log('The person is a teenager.');
+// }else if(age >= 20 && age < 65){
+//     console.log('The person is an adult.');
+// }else if(age >= 65 && age > 65){
+//     console.log('The person is an elder');
+// }else{
 //     console.log('We need to find some users!')
 // }
 
 //================
-//Question : 32
+// Question 32
 //================
-// List of current users
-// const currentUsers: string[] = ["john", "alice", "bob", "emma", "smith"];
-// // List of new users
-// const newUsers: string[] = ["emily", "John", "ALICE", "charlie", "bob"];
-
-// const isUsernameTaken = (username:string):boolean => { 
-//     const changeLowercase = username.toLowerCase()
-//     return currentUsers.some((user)=> user.toLowerCase() === changeLowercase)
+// let current_users:string[] = ['jhon', 'honey', 'ammar', 'muhammad', 'mills']
+// let new_users:string[] = ['jhon', 'honey', 'basil', 'muneeb', 'ahmed']
+// const finding_users = (new_user:string):boolean =>{
+//     const changeToLower = new_user.toLowerCase()
+//     return current_users.some((user)=> user.toLowerCase() === changeToLower)
 // }
-// for(const newUser of newUsers){
-//     if(isUsernameTaken(newUser)){
-//         console.log(`Sorry, the username '${newUser}' is already taken. Please enter`)
+// for(let user of new_users){
+//     if(finding_users(user)){
+//         console.log(`${user}this user is already exsist`)
 //     }else{
-//         console.log(`Congratulations, the username '${newUser}' is available.`);
+//         console.log(`${user}this user is avaliable`)
 //     }
 // }
 
 //================
-//Question : 33
+// Question 33
 //================
-// Store numbers 1 through 9 in an array
-// const numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-// // Loop through the array
-// for (const number of numbers) {
-//     // Use an if-else chain to determine the proper ordinal ending
-//     let ordinalEnding: string;
-//     if (number === 1) {
-//         ordinalEnding = "st";
-//     } else if (number === 2) {
-//         ordinalEnding = "nd";
-//     } else if (number === 3) {
-//         ordinalEnding = "rd";
+// let numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// numbers.forEach((num) =>{
+//     if(num === 1){
+//         console.log(num + "st")
+//     }else if(num === 2){
+//         console.log(num + "nd")
+//     }else if(num === 3){
+//         console.log(num + "rd")
+//     }else if(num >= 4){
+//         console.log(num + "th")
+//     }
+// })
+
+//================
+// Question 34
+//================
+// let pizza:string[] = ['pepperoni', 'chicken', 'vegetable']
+// for(let i = 0; i < pizza.length; i++){
+//     console.log(pizza[i])
+// }
+// for(let i = 0; i < pizza.length; i++){
+//     console.log(`I like ${pizza[i]} pizza.`)
+// }
+// console.log("I really love pizza!")
+
+//================
+// Question 35
+//================
+// let animals: string[] = ['dog', 'cat', 'parrot']
+// for (let i = 0; i < animals.length; i++) {
+//     console.log(animals[i])
+// }
+// for (let i = 0; i < animals.length; i++) {
+//     console.log(`A ${animals[i]} would make a great pet.`)
+// }
+// console.log("Any of these animals would make a great pet!")
+
+//================
+// Question 36
+//================
+// const make_shirt = (size:string):string => {
+//     return `The size of T-shirt is ${size}`
+// }
+// console.log(make_shirt("large"))
+
+//================
+// Question 37
+//================
+// const make_shirt = (size: string = 'large', message: string = 'I love TypeScript'): string => {
+//     let shirtMessage: string;
+//     if (size === 'large' || size === 'medium') {
+//         shirtMessage = message;
 //     } else {
-//         ordinalEnding = "th";
+//         shirtMessage = `The size of T-shirt is ${size}`;
 //     }
-//     console.log(`${number}${ordinalEnding}`);
+//     return shirtMessage;
 // }
+// console.log(make_shirt('medium'));
+// console.log(make_shirt());   
+// console.log(make_shirt('small', 'Hello, World!'));
 
 //================
-//Question : 34
+// Question 38
 //================
-// Array of favorite pizza names
-// const favoritePizzas: string[] = ["Pepperoni", "Margherita", "Supreme"];
-// // Print each pizza name using a for loop
-// for (const pizza of favoritePizzas) {
-//     console.log(pizza);
+// const describe_city = (city:string, country:string = 'pakistan'):string => {
+//     return `${city} is in ${country}`
 // }
-// console.log("\n");
-// // Print a sentence for each pizza
-// for (const pizza of favoritePizzas) {
-//     console.log(`I like ${pizza} pizza.`);
-// }
-// console.log("\n");
-// // Additional statement expressing love for pizza
-// console.log("I really love pizza!");
+// console.log(describe_city('Mirpurkhas'))
+// console.log(describe_city('karachi'))
+// console.log(describe_city('Hongkong'))
 
 //================
-//Question : 35
+// Question 39
 //================
-// let animals:string[] = ['cat', 'cow', 'dog']
-// for(const animal of animals){
-//     console.log(animal)
+// const city_country = (city:string, country:string):string => {
+//     return `${city}, ${country}`
 // }
-// console.log('\n')
-// for(const animal of animals){
-//     console.log(`${animal.toUpperCase()} is a great pet animal`)
-// }
-// console.log('\n')
+// console.log(city_country('karachi', 'Pakistan'))
+// console.log(city_country('Mumbai', 'India'))
+// console.log(city_country('Wuhan', 'China'))
 
 //================
-//Question : 36
+// Question 40
 //================
-// const makeTshirt = (size: string):any => {
-//     return `The shirt size is ${size}`
-// }
-// console.log(makeTshirt("large"))
-
-//================
-//Question : 37
-//================
-// Define the make_shirt function with default parameters
-// function make_shirt(size: string = "Large", message: string = "I love TypeScript"): void {
-//     console.log(`The shirt size is ${size} and it says "${message}".`);
-// }
-// make_shirt();
-// make_shirt("Medium");
-// make_shirt("Small", "Hello, World!");
-
-//================
-//Question : 38
-//================
-//  const describe_city = (city:string , country:string = "pakistan"): void =>{
-//    console.log(`${city} is in ${country}`)
-//  }
-// describe_city("karachi")
-// describe_city("Mirpurkhas")
-// describe_city("Multan")
-
-//================
-//Question : 39
-//================
-// const city_country = (city: string, country: string):void => {
-//     console.log(`${city},${country}`)
-// }
-// city_country("karachi", "pakistan")
-// city_country("Lahore", "pakistan")
-// city_country("Mirpurkhas", "pakistan")
-
-//================
-//Question : 40
-//================
-// Define the make_album function
-// function make_album(artist: string, title: string, tracks?: number): { artist: string, title: string, tracks?: number } {
-//     const album: { artist: string, title: string, tracks?: number } = {
+// const make_album = (artist: string, title: string, tracks?: number): { artist: string, title: string, tracks?: number } => {
+//     let album: { artist: string, title: string, tracks?: number } = {
 //         artist: artist,
 //         title: title
-//     };
-//     if (tracks !== undefined) {
-//         album.tracks = tracks;
 //     }
-//     return album;
+//     if(tracks !== undefined){
+//         album.tracks = tracks
+//     }
+//     return album
 // }
-// // Create three dictionaries representing different albums
-// const album1 = make_album("Artist 1", "Album 1");
-// const album2 = make_album("Artist 2", "Album 2", 12); // With number of tracks
-// const album3 = make_album("Artist 3", "Album 3");
-// // Print each return value to show that objects are storing the album information correctly
-// console.log(album1);
-// console.log(album2);
-// console.log(album3);
+
+// let album1 = make_album('Artist1', 'Album1')
+// let album2 = make_album('Artist2', 'Album2', 120)
+// let album3 = make_album('Artist3', 'Album3')
+
+// console.log(album1)
+// console.log(album2)
+// console.log(album3)
 
 //================
-//Question : 41
+// Question 41
 //================
-// let magicians: string[] = [
-//     "Harry Houdini",
-//     "David Copperfield",
-//     "Penn Jillette",
-//     "Teller"
-// ];
-//const show_magicians = (magicians:string[]):void => {
-//     magicians.forEach(magician => {
-//        console.log(magician)
-//     })
-// } 
-// show_magicians(magicians)
+// let magicians:string[] = ['ammar', 'basil', 'momin']
+// const show_magician = (magicians:string[]) => {
+//     magicians.forEach((elem) => console.log(elem))
+// }
+// show_magician(magicians)
 
 //================
-//Question : 42
+// Question 42
 //================
-// function show_magicians(magicians: string[]): void {
-//     magicians.forEach(magician => {
-//         console.log(magician);
-//     });
+// let magicians:string[] = ['ammar', 'basil', 'momin']
+// const show_magician = (magicians:string[]) => {
+//     magicians.forEach((elem) => console.log(elem))
 // }
-// function make_great(magicians: string[]): string[] {
-//     return magicians.map(magician => `the Great ${magician}`);
+// const make_great = (magicians:string[]) => {
+//     magicians.map((elem) => console.log(`this is great ${elem}`))
 // }
-// let magicians: string[] = [
-//     "Harry Houdini",
-//     "David Copperfield",
-//     "Penn Jillette",
-//     "Teller"
-// ];
-// magicians = make_great(magicians);
-// show_magicians(magicians);
+// show_magician(magicians)
+// make_great(magicians)
 
 //================
 //Question : 43

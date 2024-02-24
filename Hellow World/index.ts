@@ -77,10 +77,8 @@
 ///================
 // Question 13
 //================
-// let transportation:string[] = ['car', 'moterbike', 'cycle']
-// for(let i = 0; i < transportation.length; i++){
-//     console.log(`I would like to own a ${transportation[i]}`);
-// }
+// let transportation:string[] = ['car', 'motorbike', 'cycle']
+// transportation.forEach(elem => console.log("I would like to own a " + elem))
 
 ///================
 // Question 14
@@ -507,66 +505,46 @@
 // make_great(magicians)
 
 //================
-//Question : 43
+// Question 43
 //================
-// function show_magicians(magicians: string[]): void {
-//     magicians.forEach(magician => {
-//         console.log(magician);
-//     });
+// let magicians:string[] = ['ammar', 'basil', 'momin']
+// const show_magician = (magicians:string[]) => {
+//     magicians.forEach((elem) => console.log(elem))
 // }
-
-// function make_great(magicians: string[]): string[] {
-//     return magicians.map(magician => `the Great ${magician}`);
+// const make_great = (magicians:string[]):string[] => {
+//    return magicians.map((elem) => `great ${elem}`)
 // }
-
-// let originalMagicians: string[] = [
-//     "Harry Houdini",
-//     "David Copperfield",
-//     "Penn Jillette",
-//     "Teller"
-// ];
-
-// let greatMagicians: string[] = make_great([...originalMagicians]); // Create a copy of the original array
-
-// console.log("Original Magicians:");
-// show_magicians(originalMagicians);
-
-// console.log("\nGreat Magicians:");
-// show_magicians(greatMagicians);
+// const greatMagician = make_great([...magicians]) 
+// show_magician(magicians)
+// show_magician(greatMagician)
 
 //================
-//Question : 44
+// Question 44
 //================
-// function makeSandwich(...items: string[]): void {
-//     console.log("Making a sandwich with the following items:");
-//     items.forEach(item => console.log(`- ${item}`));
-//     console.log("Enjoy your sandwich!\n");
+// const summary = (...items:string[]) => {
+//     console.log('sandwich summary')
+//     items.forEach(elem => console.log(`- ${elem}`))
+//     console.log('enjoy sandwich')
 // }
-// makeSandwich("Ham", "Cheese", "Lettuce", "Tomato");
-// makeSandwich("Turkey", "Swiss cheese", "Mustard");
-// makeSandwich("Peanut butter", "Jelly");
+// summary("Ham", "Cheese", "Lettuce", "Tomato");
+// summary("Turkey", "Swiss cheese", "Mustard");
+// summary("Peanut butter", "Jelly");
 
 //================
-//Question : 45
+// Question 45
 //================
 // interface Car {
-//     manufacturer: string;
-//     modelName: string;
-//     [key: string]: any; // Allow any additional properties
+//     manufacturer: string,
+//     model: string,
+//     [key:string]:any
 // }
-
-// function createCar(manufacturer: string, modelName: string, ...additionalInfo: [string, any][]): Car {
-//     const car: Car = {
-//         manufacturer,
-//         modelName
-//     };
-
-//     // Add additional information
-//     additionalInfo.forEach(([key, value]) => {
-//         car[key] = value;
-//     });
-
-//     return car;
+// const make_car = (manufacturer: string, model: string, ...more_information: [string, any][]): Car => {
+//     let car: Car = {
+//         manufacturer: manufacturer,
+//         model: model
+//     }
+//     more_information.forEach(([key, value]) => car[key] = value)
+//     return car
 // }
-// const myCar = createCar("Toyota", "Camry", "color", "red", "year", 2022);
+// let myCar = make_car('Toyota', 'Camry', ['color', 'blue'], ['year', 2023], ['size', 'large']);
 // console.log(myCar);
